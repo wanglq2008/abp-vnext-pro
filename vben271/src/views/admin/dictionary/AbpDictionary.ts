@@ -407,7 +407,7 @@ export async function deleleDetailAsync({ dataDictionaryId, dataDictionayDetailI
 export async function deleteDictinaryTypeAsync({ Id, reloadType }) {
   const _dataDictionaryServiceProxy = new DataDictionaryServiceProxy();
   const request = new IdInput();
-  request.Id = Id;
+  request.id = Id;
   await _dataDictionaryServiceProxy.deleteDictinaryType(request);
   reloadType();
 }
